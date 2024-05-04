@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    width: 250px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    margin-bottom: 15px;
+    max-width: 200px;
+}
+
+.menu-item input[type="number"],
+.menu-item button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item input[type="number"]::-webkit-inner-spin-button,
+.menu-item input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.menu-item input[type="number"]:focus {
+    outline: none;
+}
+
+.menu-item input[type="number"]:hover,
+.menu-item button:hover {
+    background-color: #45a049;
+}
+
+.cart-container {
+    margin-top: 20px;
+}
+
+.cart-container h2 {
+    font-size: 1.8rem;
+}
+
+#cart-items {
+    margin-top: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-item {
+        width: calc(50% - 40px);
+        margin: 10px;
+    }
+}
+
